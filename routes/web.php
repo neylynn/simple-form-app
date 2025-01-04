@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
@@ -39,3 +40,7 @@ Route::post('/complete-form', function (Request $request) {
 Route::get('/contact-display', function () {
     return view('contact-display');
 });
+
+Route::get('/items', [ItemController::class, 'index']);
+Route::post('/items/delete/{id}', [ItemController::class, 'delete']);
+Route::post('/items/recover/{id}', [ItemController::class, 'recover']);
