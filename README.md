@@ -1,3 +1,4 @@
+## Project Set Up
 ```bash
 composer install
 
@@ -30,3 +31,11 @@ php artisan serve
 
 Item List including delete/recover/search features => [http://localhost:8000/items](http://localhost:8000)
 
+## 3. API Development Questions
+can test in postman
+```bash
+GET ITEM API => [http://localhost:8000/api/items](METHOD => GET)
+POST ITEM API => [http://localhost:8000/api/items](METHOD => POST)
+UPDATE ITEM API => [http://localhost:8000/api/items/{id}](METHOD => PUT)
+DELETE ITEM API => [http://localhost:8000/api/items/{id}](METHOD => DELETE)
+```
